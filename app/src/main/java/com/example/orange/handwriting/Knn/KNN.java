@@ -1,4 +1,5 @@
-package com.example.orange.handwriting;
+package com.example.orange.handwriting.Knn;
+
 import java.util.*;
 
 /**

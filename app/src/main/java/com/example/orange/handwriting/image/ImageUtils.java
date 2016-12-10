@@ -1,4 +1,4 @@
-package com.example.orange.handwriting;
+package com.example.orange.handwriting.image;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
@@ -59,7 +59,6 @@ public class ImageUtils {
                 else
                     mat = mat + '0';
             }
-
         }
 
         return mat ;

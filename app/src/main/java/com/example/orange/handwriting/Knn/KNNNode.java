@@ -1,4 +1,4 @@
-package com.example.orange.handwriting;
+package com.example.orange.handwriting.Knn;
 /**
  * Created by orange on 16/11/24.
  */

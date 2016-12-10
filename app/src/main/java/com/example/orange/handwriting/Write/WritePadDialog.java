@@ -1,4 +1,4 @@
-package com.example.orange.handwriting;
+package com.example.orange.handwriting.Write;
 
 import android.app.Dialog;
 import android.content.Context;

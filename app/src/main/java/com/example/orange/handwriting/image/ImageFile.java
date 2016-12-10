@@ -1,10 +1,14 @@
-package com.example.orange.handwriting;
+package com.example.orange.handwriting.image;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Created by orange on 16/11/23.
@@ -34,7 +38,18 @@ public class ImageFile {
         return text;
     }
 
+    public Bitmap readFilefromsrc(String Filename) throws IOException{
 
+        String rootpath = context.getExternalCacheDir().getPath(); //图片存放的路径
+        String path = rootpath+ File.separator+Filename;
+        InputStream is = context.getClassLoader().getResourceAsStream(path); //得到图片流
+        System.out.println(path);
+        BitmapFactory.Options op = new BitmapFactory.Options();
+        op.inMutable = true;
+        Bitmap bitmap= BitmapFactory.decodeFile(path,op);
+        System.out.println(bitmap);
+        return bitmap;
+    }
 
     public Context getContext() {
         return context;
